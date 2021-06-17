@@ -254,6 +254,26 @@ implementation "com.github.intrigus.gdx-freetype-gwt:gdx-freetype-gwt:$freefontT
 implementation "com.github.tommyettinger:regexodus:$regExodusVersion:sources"
 implementation "com.rafaskoberg.gdx:typing-label:$typingLabelVersion:sources"
 ```
+	
+<b>gradle.properties</b>
+	
+![image](https://user-images.githubusercontent.com/73443724/122417946-2cdc3e80-cf8a-11eb-8018-9a7637787da4.png)
+	
+<p>
+The following should already be available for Hyperlap:<br>
+	
+`h2dVersion=0.0.7-SNAPSHOT` <p>
+	
+So, we add the folloing: <p>
+	
+```
+freefontTypeGwtVersion=1.9.11-SNAPSHOT
+regExodusVersion = 0.1.10
+typingLabelVersion = 1.2.0
+```
+<p>
+(check the current versions)
+<p>
 
 
 
