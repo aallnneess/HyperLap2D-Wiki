@@ -1,0 +1,15 @@
+name: Sync Github Wiki
+on: push
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: awact/wiki-action@master
+      env:
+        ACTION_MAIL: fgnm.dev@gmail.com
+        ACTION_NAME: fgnm
+        GH_PAT: ${{ secrets.GH_PAT }}
+        OWNER: rednblackgames
+        REPO_NAME: HyperLap2D
