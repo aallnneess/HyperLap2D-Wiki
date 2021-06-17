@@ -9,7 +9,49 @@ As of now, this is implemented as follows:<p>
 ![image](https://user-images.githubusercontent.com/73443724/122401820-3d39ec80-cf7d-11eb-8401-c4650e36bc42.png)
   <p>
     
-First we have to add some `extend-configuration-property`<br>
+Fresh created it looks like this:<p>
+  
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.8.2//EN" "http://www.gwtproject.org/doctype/2.8.2/gwt-module.dtd">
+<module rename-to="html">
+	<source path="" />
+	<inherits name="com.badlogic.gdx.backends.gdx_backends_gwt" />
+	<inherits name="com.badlogic.ashley_gwt" />
+	<inherits name="com.badlogic.gdx.physics.box2d.box2d-gwt" />
+	<inherits name="com.tutorial.firstgame.GameMain" />
+	<entry-point class="com.tutorial.firstgame.gwt.GwtLauncher" />
+	<set-configuration-property name="gdx.assetpath" value="../assets" />
+	<set-configuration-property name="xsiframe.failIfScriptTag" value="FALSE"/>
+	<!-- These two lines reduce the work GWT has to do during compilation and also shrink output size. -->
+	<set-property name="user.agent" value="gecko1_8, safari"/>
+	<collapse-property name="user.agent" values="*" />
+	<!-- Remove the "user.agent" lines above if you encounter issues with Safari or other Gecko browsers. -->
+</module>  
+``` 
+These 2 lines (from above) inherits our game and set the entry-point:<p>
+
+```
+<inherits name="com.tutorial.firstgame.GameMain" />
+<entry-point class="com.tutorial.firstgame.gwt.GwtLauncher" />  
+```  
+<p>
+  
+We delete the folling 2 lines:<p>  
+  
+``` 
+<inherits name="com.badlogic.ashley_gwt" />
+<inherits name="com.badlogic.gdx.physics.box2d.box2d-gwt" />
+```  
+<p>
+and insert the following:  
+  
+```
+<extend-configuration-property name="gdx.reflect.include" value="com.badlogic.ashley" />
+<inherits name="HyperLap2D" />  
+```
+    
+Then we have to add some `extend-configuration-property`<br>
     They have to be placed inside the modules, and they are needed for Hyperlap2D per se:<p>
       
 ```
