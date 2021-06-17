@@ -191,6 +191,14 @@ First we have to add some `extend-configuration-property`<br>
 <extend-configuration-property name="gdx.reflect.exclude" value="com.badlogic.gdx.maps.MapRenderer" />
 <extend-configuration-property name="gdx.reflect.exclude" value="com.badlogic.gdx.maps.MapObjects" />
 ```      
+      
+<p>
+  
+If you add `components` during runtime with reflection, this must also be noted:<p>
+  
+```
+<extend-configuration-property name="gdx.reflect.include" value="com.your.game.components.ExampleComponent" />
+```
   
 
 
