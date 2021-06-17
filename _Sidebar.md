@@ -25,7 +25,7 @@
 ### Runtime
   * libGDX
     * [Getting Started](libgdx---Getting-Started)
-    * [Html Getting Started](Html---Getting-Started.md)
+    * [Html Getting Started](Html---Getting-Started)
     * Extensions
       * [Spine](libgdx-Spine-extension)
       * [Talos](libgdx-Talos-extension)
