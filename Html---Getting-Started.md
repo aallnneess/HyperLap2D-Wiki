@@ -241,7 +241,19 @@ If you add `components` during runtime with reflection, this must also be noted:
 ```
 <extend-configuration-property name="gdx.reflect.include" value="com.your.game.components.ExampleComponent" />
 ```
-  
+<b>build.gradle(html)</b>  <p>
+![image](https://user-images.githubusercontent.com/73443724/122416990-78421d00-cf89-11eb-9ecd-e90d3616034a.png)
+<p>
+
+Here we have to add some `dependencies`:<p>
+	
+```
+implementation "games.rednblack.hyperlap2d:runtime-libgdx:0.0.6-SNAPSHOT:sources"
+implementation "com.github.intrigus.gdx-freetype-gwt:gdx-freetype-gwt:$freefontTypeGwtVersion"
+implementation "com.github.intrigus.gdx-freetype-gwt:gdx-freetype-gwt:$freefontTypeGwtVersion:sources"
+implementation "com.github.tommyettinger:regexodus:$regExodusVersion:sources"
+implementation "com.rafaskoberg.gdx:typing-label:$typingLabelVersion:sources"
+```
 
 
 
