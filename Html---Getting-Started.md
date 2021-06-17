@@ -1,15 +1,15 @@
-<b>Getting started with Html 5 with Hyperlap2D runtime</b>
+Getting started with Html 5 with Hyperlap2D runtime
 
 
 
-If you want to be able to use your Hyperlap project in the browser using Html / Gwt, there is a lot to do.<br>
-As of now, this is implemented as follows:<p>
+If you want to be able to use your Hyperlap project in the browser using Html / Gwt, there is a lot to do.
+As of now, this is implemented as follows:
 
-<b>GdxDefinition.gwt.xml</b><p>
+GdxDefinition.gwt.xml
 ![image](https://user-images.githubusercontent.com/73443724/122401820-3d39ec80-cf7d-11eb-8401-c4650e36bc42.png)
-  <p>
+  
     
-Fresh created it looks like this:<p>
+Fresh created it looks like this:
   
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -29,21 +29,21 @@ Fresh created it looks like this:<p>
 	<!-- Remove the "user.agent" lines above if you encounter issues with Safari or other Gecko browsers. -->
 </module>  
 ``` 
-These 2 lines (from above) inherits our game and set the entry-point:<p>
+These 2 lines (from above) inherits our game and set the entry-point:
 
 ```
 <inherits name="com.tutorial.firstgame.GameMain" />
 <entry-point class="com.tutorial.firstgame.gwt.GwtLauncher" />  
 ```  
-<p>
+
   
-We delete the folling 2 lines:<p>  
+We delete the folling 2 lines:  
   
 ``` 
 <inherits name="com.badlogic.ashley_gwt" />
 <inherits name="com.badlogic.gdx.physics.box2d.box2d-gwt" />
 ```  
-<p>
+
 and insert the following:  
   
 ```
@@ -51,8 +51,8 @@ and insert the following:
 <inherits name="HyperLap2D" />  
 ```
     
-Then we have to add some `extend-configuration-property`<br>
-    They have to be placed inside the modules, and they are needed for Hyperlap2D per se:<p>
+Then we have to add some `extend-configuration-property`
+    They have to be placed inside the modules, and they are needed for Hyperlap2D per se:
       
 ```
 <extend-configuration-property name="gdx.reflect.include" value="java.util.HashSet" />
@@ -234,18 +234,18 @@ Then we have to add some `extend-configuration-property`<br>
 <extend-configuration-property name="gdx.reflect.exclude" value="com.badlogic.gdx.maps.MapObjects" />
 ```      
       
-<p>
+
   
-If you add `components` during runtime with reflection, this must also be noted:<p>
+If you add `components` during runtime with reflection, this must also be noted:
   
 ```
 <extend-configuration-property name="gdx.reflect.include" value="com.your.game.components.ExampleComponent" />
 ```
-<b>build.gradle(html)</b>  <p>
+build.gradle(html)  
 ![image](https://user-images.githubusercontent.com/73443724/122416990-78421d00-cf89-11eb-9ecd-e90d3616034a.png)
-<p>
 
-Here we have to add some `dependencies`:<p>
+
+Here we have to add some `dependencies`:
 	
 ```
 implementation "games.rednblack.hyperlap2d:runtime-libgdx:0.0.6-SNAPSHOT:sources"
@@ -255,35 +255,35 @@ implementation "com.github.tommyettinger:regexodus:$regExodusVersion:sources"
 implementation "com.rafaskoberg.gdx:typing-label:$typingLabelVersion:sources"
 ```
 	
-<b>gradle.properties</b>
+gradle.properties
 	
 ![image](https://user-images.githubusercontent.com/73443724/122417946-2cdc3e80-cf8a-11eb-8018-9a7637787da4.png)
 	
-<p>
-The following should already be available for Hyperlap:<br>
+
+The following should already be available for Hyperlap:
 	
-`h2dVersion=0.0.7-SNAPSHOT` <p>
+`h2dVersion=0.0.7-SNAPSHOT` 
 	
-So, we add the folloing: <p>
+So, we add the folloing: 
 	
 ```
 freefontTypeGwtVersion=1.9.11-SNAPSHOT
 regExodusVersion = 0.1.10
 typingLabelVersion = 1.2.0
 ```
-<p>
+
 (check the current versions)
-<p>
+
 	
-<b> Start Gwt </b><p>
+ Start Gwt 
 	
-Clean:<p>
-	![image](https://user-images.githubusercontent.com/73443724/122420404-f4d5fb00-cf8b-11eb-8fc7-d52d9d82cffd.png)<p>
+Clean:
+	![image](https://user-images.githubusercontent.com/73443724/122420404-f4d5fb00-cf8b-11eb-8fc7-d52d9d82cffd.png)
 		
-Start superDev: <p>
-	![image](https://user-images.githubusercontent.com/73443724/122420537-0d461580-cf8c-11eb-9585-6c635fc92419.png) <p>
+Start superDev: 
+	![image](https://user-images.githubusercontent.com/73443724/122420537-0d461580-cf8c-11eb-9585-6c635fc92419.png) 
 	
-Join in browser ! <p>
+Join in browser ! 
 	![image](https://user-images.githubusercontent.com/73443724/122420689-28b12080-cf8c-11eb-9e53-745eaa386f51.png)
 
 
