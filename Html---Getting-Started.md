@@ -274,6 +274,20 @@ typingLabelVersion = 1.2.0
 <p>
 (check the current versions)
 <p>
+	
+<b> Start Gwt </b><p>
+	
+Clean:<p>
+	![image](https://user-images.githubusercontent.com/73443724/122420404-f4d5fb00-cf8b-11eb-8fc7-d52d9d82cffd.png)<p>
+		
+Start superDev: <p>
+	![image](https://user-images.githubusercontent.com/73443724/122420537-0d461580-cf8c-11eb-9585-6c635fc92419.png) <p>
+	
+Join in browser ! <p>
+	![image](https://user-images.githubusercontent.com/73443724/122420689-28b12080-cf8c-11eb-9e53-745eaa386f51.png)
+
+
+
 
 
 
