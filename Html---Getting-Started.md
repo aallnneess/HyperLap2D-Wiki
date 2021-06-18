@@ -248,7 +248,7 @@ If you add `components` during runtime with reflection, this must also be noted:
 Here we have to add some `dependencies`:<p>
 	
 ```
-implementation "games.rednblack.hyperlap2d:runtime-libgdx:0.0.6-SNAPSHOT:sources"
+implementation "games.rednblack.hyperlap2d:runtime-libgdx:$h2dVersion:sources"
 implementation "com.github.intrigus.gdx-freetype-gwt:gdx-freetype-gwt:$freefontTypeGwtVersion"
 implementation "com.github.intrigus.gdx-freetype-gwt:gdx-freetype-gwt:$freefontTypeGwtVersion:sources"
 implementation "com.github.tommyettinger:regexodus:$regExodusVersion:sources"
