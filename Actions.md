@@ -4,7 +4,4 @@ HyperLap2D has a built-in Actions editor that helps you to create a complex anim
 
 Here is the easiest way to create a very simple action and start it in runtime:
 
-![actionsToDo.gif](images/actionsToDo.gif)
-
-
-
+<img src ="images/actionsToDo.gif">
