@@ -82,7 +82,7 @@ ItemWrapper foo = root.getChild("foo")
 There are several default components created for each Entity.
 
 * `MainItemComponent` : This is present almost in any object and contains core information like entity type, identifier, unique Id, custom variables etc.
-* `TransformComponent`, `DimensionComponent` `TintComponent` `ZIndexComponent` : These are present in almost any object too and contains information like position, dimension, origin point, rotation, z-index, color etc.
+* `TransformComponent`, `DimensionsComponent` `TintComponent` `ZIndexComponent` : These are present in almost any object too and contains information like position, dimension, origin point, rotation, z-index, color etc.
 * `NodeComponent` : Is present in any `Composite Item`, it stores children references as `Entity` objects.
 * `ViewportComponent` : Can be present only on a single Entity. It's the point where rendering pipeline starts from. Usually `root` composite has this component.
 
