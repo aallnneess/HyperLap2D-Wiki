@@ -24,7 +24,6 @@ Add Spine inherit to Html GdxDefinition.gwt.xml
 ```
 
 
-
 Use [compatibility table](https://github.com/rednblackgames/h2d-libgdx-spine-extension) to choose right version for each dependence.
 
 Then inject newly loaded code into `SceneLoader`
