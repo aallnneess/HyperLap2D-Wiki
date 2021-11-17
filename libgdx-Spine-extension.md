@@ -21,6 +21,7 @@ dependencies {
 Add Spine inherit to Html GdxDefinition.gwt.xml
 ```
 <inherits name="com.esotericsoftware.spine"/>
+<inherits name="HyperLap2D.spine"/>
 ```
 
 
