@@ -22,6 +22,8 @@ Add Spine inherit to Html GdxDefinition.gwt.xml
 ```
 <inherits name="com.esotericsoftware.spine"/>
 <inherits name="HyperLap2D.spine"/>
+
+<extend-configuration-property name="artemis.reflect.include" value="games.rednblack.h2d.extention.spine" />
 ```
 
 
